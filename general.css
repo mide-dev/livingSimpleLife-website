@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: ubuntu, sans-serif;
+}
+
+/* ============
+      MOBILE
+      =========== */
+
+/* Typography */
+
+h1,
+h2,
+h3,
+p,
+small,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: lora, serif;
+  color: #143774;
+  font-weight: 400;
+}
+
+.title__maintext {
+  font-size: 2rem;
+  padding-top: 2.5rem;
+}
+
+.title__smalltext {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #1792d2;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.nav__item {
+  padding: 0.8rem 0;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav__link {
+  color: #707070;
+}
+
+/* MEDIA */
+
+img {
+  width: 100%;
+}
+
+/* LAYOUTS */
+
+header {
+  background-color: #f8f8f8;
+  padding-bottom: 1.5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 557px;
+  margin: 0 auto;
+  border: 1px solid magenta;
+}
+
+.title {
+  text-align: center;
+}
+
+.nav {
+  margin-top: 1.2rem;
+}
+
+/* ===========
+    BIG SCREENS
+    =================== */
+
+@media screen and (min-width: 557px) {
+  /* TEXT */
+  .title__maintext {
+    padding-top: 0;
+  }
+
+  /* LAYOUT */
+  header {
+    padding: 2rem 0;
+  }
+  .container {
+    max-width: 980px;
+  }
+  .container--flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+
+  .nav {
+    margin: auto 0;
+  }
+
+  .nav__list {
+    flex-direction: row;
+  }
+
+  .nav__item {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+}

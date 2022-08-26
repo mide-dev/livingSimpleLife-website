@@ -1,0 +1,84 @@
+/* Typography */
+.card__title {
+  font-size: 1.3rem;
+}
+
+.card__date {
+  font-size: 0.875rem;
+  color: #707070;
+  padding: 1rem 0;
+}
+
+.card__paragraph {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #707070;
+  line-height: 1.4rem;
+  padding-top: 1rem;
+}
+
+.card_paragraph--bold {
+  font-weight: 700;
+}
+
+.card_paragraph--link {
+  color: #1792d2;
+}
+
+.card__link {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1792d2;
+  margin: 1rem 0;
+}
+
+/* Media */
+
+/* Layouts */
+.card {
+  margin-top: 3rem;
+  /* border: 1px solid magenta; */
+}
+
+.card__hero-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__about-me {
+  display: none;
+}
+
+/* ===========
+    BIGGER SCREENS
+    ============== */
+
+@media screen and (min-width: 557px) {
+  /* Typography */
+
+  /* Media */
+  /* .card__about-me--img {
+    width: 100%;
+  } */
+
+  .card__img {
+    width: 100%;
+  }
+
+  .card__img-wrap,
+  .card__about-me {
+    width: 40%;
+  }
+
+  /* Layout */
+  .card__hero-wrap {
+    flex-direction: row;
+  }
+
+  .card__about-me {
+    display: block;
+  }
+}
