@@ -30,13 +30,15 @@
         <nav class="nav">
           <ul class="list nav__list">
             <li class="nav__item">
-              <a class="link nav__link" href="#">HOME</a>
+              <a class="link nav__link active" href="home.html">HOME</a>
             </li>
             <li class="nav__item">
-              <a class="link nav__link" href="#">ABOUT ME</a>
+              <a class="link nav__link" href="../About/about.html">ABOUT ME</a>
             </li>
             <li class="nav__item">
-              <a class="link nav__link" href="#">RECENT POSTS</a>
+              <a class="link nav__link" href="../Recent Post/recent.html"
+                >RECENT POSTS</a
+              >
             </li>
           </ul>
         </nav>
@@ -44,42 +46,167 @@
     </header>
 
     <!-- ===============
-            SECTION --1
+            BODY
         ================ -->
-    <section class="card">
+    <main class="card">
       <div class="container">
-        <div class="card__hero-wrap">
-          <div class="card__img-wrap">
-            <img class="card__img" src="../img/life.jpg" alt="life" />
-            <small class="card__date">July 23, 2019 | 3 comments</small>
+        <div class="card__main">
+          <div class="card__column-1">
+            <!--  -->
+            <div class="card__content">
+              <img class="card__img" src="../img/life.jpg" alt="life" />
+              <small class="card__date">July 23, 2019 | 3 comments</small>
+              <h2 class="card__title">Finding simplicity in life</h2>
+              <p class="card__paragraph">
+                <span class="card_paragraph--bold"
+                  >Life can get complicated really quickly</span
+                >, but it doesn't have to be! There are many ways to simplify
+                your life,
+                <a href="#" class="card_paragraph--link"
+                  >a few of which we've explored in the past.</a
+                >
+                This week we're taking a bit of a approach though, in how you
+                can find simplicity in the life you already living. continue
+                reading
+              </p>
+              <a href="#" class="card__link">continue reading</a>
+            </div>
+            <hr class="card__divider" />
+
+            <!--  -->
+            <div class="card__content card__content--flex margin-t-2">
+              <div class="card__content-col1">
+                <img class="card__article-img" src="../img/food.jpg" />
+                <!-- only appears on bigScreen -->
+                <small class="card__date padding-0 big-screen"
+                  >July 23, 2019 | 3 comments</small
+                >
+              </div>
+              <div class="card__content-col2">
+                <div class="card__title-wrap">
+                  <h2 class="card__title">Keeping cooking simple</h2>
+                  <!-- only appears on smaller screen -->
+                  <small class="card__date padding-0 small-screen"
+                    >July 23, 2019 | 3 comments</small
+                  >
+                </div>
+                <p class="card__paragraph">
+                  Food is a very important part of everyone's life. If you want
+                  to be healthy, you have to eat healthy. One of the easiest
+                  ways to do that is to keep your cooking nice and simple.
+                  continue reading
+                </p>
+                <a href="#" class="card__link">continue reading</a>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="card__content card__content--flex margin-t-3">
+              <div class="card__content-col1">
+                <img class="card__article-img" src="../img/work.jpg" />
+                <!-- only appears on bigScreen -->
+                <small class="card__date padding-0 big-screen"
+                  >July 23, 2019 | 3 comments</small
+                >
+              </div>
+              <div class="card__content-col2">
+                <div class="card__title-wrap">
+                  <h2 class="card__title">Simplicity and work</h2>
+                  <!-- only appears on smaller screen -->
+                  <small class="card__date padding-0 small-screen"
+                    >July 23, 2019 | 3 comments</small
+                  >
+                </div>
+                <p class="card__paragraph">
+                  Work is often a major source of stress. People get frustrated,
+                  it ruins their relationship with others and it leads to
+                  burnout. By keeping your work life as simple as possible, it
+                  will help balance everything out. continue reading
+                </p>
+                <a href="#" class="card__link">continue reading</a>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="card__content card__content--flex margin-t-3">
+              <div class="card__content-col1">
+                <img class="card__article-img" src="../img/deco.jpg" />
+                <!-- only appears on bigScreen -->
+                <small class="card__date padding-0 big-screen"
+                  >July 23, 2019 | 3 comments</small
+                >
+              </div>
+
+              <div class="card__content-col2">
+                <div class="card__title-wrap">
+                  <h2 class="card__title">Simple decorations</h2>
+                  <!-- only appears on smaller screen -->
+                  <small class="card__date padding-0 small-screen"
+                    >July 23, 2019 | 3 comments</small
+                  >
+                </div>
+                <p class="card__paragraph">
+                  A home isn't a home until you've decorated a little. People
+                  either don't decorate, or they go overboard and it doesn't
+                  have the impact they were hoping for. Staying simple will help
+                  draw the eye where you want it to and make things pop like
+                  never before. continue reading
+                </p>
+                <a href="#" class="card__link">continue reading</a>
+              </div>
+            </div>
+            <!--  -->
           </div>
-          <!-- about me card (BIGGER SCREENS) -->
-          <div class="card__about-me">
-            <div class="card__about-me--frame">
-              <h2 class="card__about-me--title">ABOUT ME</h2>
-              <img class="card__about-me--img" src="../img/about-me.jpg" />
-              <p class="card__about-me--text">
+
+          <div class="card__column-2">
+            <div class="card__small">
+              <h2 class="card__small-title" id="display-toggle">ABOUT ME</h2>
+              <img
+                class="card__small-img card--about-me"
+                src="../img/about-me.jpg"
+              />
+              <p class="card__small-text">
                 I find life better, and I'm happier, when things are nice and
                 simple.
               </p>
             </div>
+            <!--  -->
+            <div class="card__small card__small--long">
+              <h2 class="card__small-title">RECENT POSTS</h2>
+              <img
+                class="card__small-img card--recents"
+                src="../img/food.jpg"
+              />
+              <p class="card__small-text card__small-text--serif">
+                Keeping cooking simple
+              </p>
+              <hr class="card__small-divider" />
+              <img
+                class="card__small-img card--recents"
+                src="../img/work.jpg"
+              />
+              <p class="card__small-text card__small-text--serif">
+                Simplicity and work
+              </p>
+              <hr class="card__small-divider" />
+              <img
+                class="card__small-img card--recents"
+                src="../img/deco.jpg"
+              />
+              <p class="card__small-text card__small-text--serif">
+                Simple decorations
+              </p>
+            </div>
           </div>
         </div>
-
-        <h2 class="card__title">Finding simplicity in life</h2>
-        <p class="card__paragraph">
-          <span class="card_paragraph--bold"
-            >Life can get complicated really quickly</span
-          >, but it doesn't have to be! There are many ways to simplify your
-          life,
-          <a href="#" class="card_paragraph--link"
-            >a few of which we've explored in the past.</a
-          >
-          This week we're taking a bit of a approach though, in how you can find
-          simplicity in the life you already living. continue reading
-        </p>
-        <a href="#" class="card__link">continue reading</a>
       </div>
-    </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer__container">
+        <h3 class="footer__text">Living the Simple Life</h3>
+        <p class="footer__copyright">Copyright 2019</p>
+      </div>
+    </footer>
   </body>
 </html>

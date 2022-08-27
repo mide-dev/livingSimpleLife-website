@@ -7,6 +7,8 @@ body {
       MOBILE
       =========== */
 
+/* HEADER */
+
 /* Typography */
 
 h1,
@@ -53,7 +55,7 @@ h2 {
 }
 
 .nav__item {
-  padding: 0.8rem 0;
+  margin: 0.8rem 0;
   text-align: center;
 }
 
@@ -66,13 +68,18 @@ h2 {
   color: #707070;
 }
 
-/* MEDIA */
+.active {
+  border-bottom: 1px solid;
+  padding-bottom: 0.2rem;
+}
+
+/* Media */
 
 img {
   width: 100%;
 }
 
-/* LAYOUTS */
+/* Layouts */
 
 header {
   background-color: #f8f8f8;
@@ -83,7 +90,6 @@ header {
   width: 90%;
   max-width: 557px;
   margin: 0 auto;
-  border: 1px solid magenta;
 }
 
 .title {
@@ -94,17 +100,40 @@ header {
   margin-top: 1.2rem;
 }
 
+/* FOOTER */
+.footer__container {
+  background-color: #143774;
+  margin-top: 4.4rem;
+  padding: 3.75rem;
+}
+
+.footer__text,
+.footer__copyright {
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.footer__text {
+  font-weight: 500;
+}
+
+.footer__copyright {
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+
 /* ===========
     BIG SCREENS
     =================== */
 
 @media screen and (min-width: 557px) {
-  /* TEXT */
+  /* Typography*/
   .title__maintext {
     padding-top: 0;
   }
 
-  /* LAYOUT */
+  /* Layout */
   header {
     padding: 2rem 0;
   }
@@ -127,6 +156,6 @@ header {
 
   .nav__item {
     padding: 0;
-    margin: 0 0.5rem;
+    margin-left: 2rem;
   }
 }
