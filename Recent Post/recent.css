@@ -1,0 +1,10 @@
+/* =========
+    BIG SCREEN
+    ===========*/
+
+@media screen and (min-width: 557px) {
+  .recents__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
