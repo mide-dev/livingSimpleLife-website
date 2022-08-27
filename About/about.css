@@ -1,0 +1,37 @@
+/* =========
+MOBILE
+========== */
+
+/* Layout */
+
+.about-me__container {
+  display: block;
+}
+
+.margin-t-1 {
+  margin-top: 1rem;
+}
+
+.margin-tb-1 {
+  margin: 1rem 0;
+}
+
+.about-me__link {
+  display: block;
+  font-family: lora, sans-serif;
+  text-decoration: none;
+  color: #1792d2;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 557px) {
+  .about-me__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .marging-0 {
+    margin-top: 0;
+  }
+}
